@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>期中</title>
+</head>
+
+<body>
+        <h1 style="visibility: hidden;width: 0;height: 0;overflow: hidden;">訂票網站</h1>
+        <section class="sec1">
+            <div class="sec1-left">
+                <img class="logo-set" src="./image/main_img.png">
+                <img class="title-set" src="./image/logo.png">
+            </div>
+            <div class="sec1-right">
+                <h2 class="new-ticket">新增旅遊套票</h2>
+                <ul class="infostyle-set">
+                    <li><label>套票名稱</label><input class="is-null input-set" placeholder="請填寫套票名稱" type="text" name="name"></li>
+                    <li><label>圖片網址</label><input class="is-null input-set is-img" placeholder="請填寫圖片網址" type="text" name="imgUrl">
+                    </li>
+                    <li><label>景點地區</label>
+                        <select name="area" class="is-null select-area">
+                            <option value="" disabled selected hidden>請選擇景點地區</option>
+                            <option value="台北">台北</option>
+                            <option value="台中">台中</option>
+                            <option value="高雄">高雄</option>
+                        </select>
+                    </li>
+                    <li><label>套票金額</label><input class="is-null input-set" placeholder="請填寫套票金額" type="number"
+                            name="price"></li>
+                    <li><label>套票組數</label><input class="is-null input-set" placeholder="請填寫套票組數" type="number"
+                            name="group"></li>
+                    <li><label>套票星級</label><input min="1" max="10" class="is-null input-set" placeholder="請填寫套票星級" type="number"
+                            name="rate"></li>
+                    <li><label>套票描述</label>
+                        <textarea name="description" class="is-null textarea-set" placeholder="請填寫套票描述 (限 100 字)"
+                            maxlength="100"></textarea>
+                    </li>
+                </ul>
+                <button class="btn">新增套票</button>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="filter">
+                <select name="filter-viewArea" class="filter-area">
+                    <option value="" disabled selected hidden>地區選擇</option>
+                    <option value="全部地區">全部地區</option>
+                    <option value="台北">台北</option>
+                    <option value="台中">台中</option>
+                    <option value="高雄">高雄</option>
+                </select>
+                <span class="search-getCount">本次搜尋共 3 筆資料</span>
+            </div>
+            <div class="sec2-container">
+                <div class="ticket-card">
+                    <mark>高雄</mark>
+                    <div class="ticket-cart-content">
+                        <span class="scroe">10</span>
+                        <img class="img-set"
+                            src="https://images.unsplash.com/photo-1522383225653-ed111181a951?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1655&q=80"
+                            alt="">
+                        <h3>肥宅心碎賞櫻3日</h3>
+                        <p class="describe">賞櫻花最佳去處。肥宅不得不去的超讚景點！</p>
+                        <div class="remaining">
+                            <div class="remaining-count">剩下最後 87 組</div>
+                            <div style="display: flex;align-items: center;">
+                                <span class="twd">TWD</span>
+                                <p class="ticket-price">$1,400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <mark>台北</mark>
+                    <div class="ticket-cart-content">
+                        <span class="scroe">2</span>
+                        <img class="img-set"
+                            src="https://images.unsplash.com/photo-1501393152198-34b240415948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                            alt="">
+                        <h3>貓空纜車雙程票</h3>
+                        <p class="describe">乘坐以透明強化玻璃為地板的「貓纜之眼」水晶車廂，享受騰雲駕霧遨遊天際之感。</p>
+                        <div class="remaining">
+                            <div class="remaining-count">剩下最後 99 組</div>
+                            <div style="display: flex;align-items: center;">
+                                <span class="twd">TWD</span>
+                                <p class="ticket-price">$240</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <mark>台中</mark>
+                    <div class="ticket-cart-content">
+                        <span class="scroe">7</span>
+                        <img class="img-set"
+                            src="https://images.unsplash.com/photo-1535530992830-e25d07cfa780?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                            alt="">
+                        <h3>台中谷關溫泉會1日</h3>
+                        <p class="describe">全館客房均提供谷關無色無味之優質碳酸原湯，並取用八仙山之山冷泉供蒞臨貴賓沐浴及飲水使用。</p>
+                        <div class="remaining">
+                            <div class="remaining-count">剩下最後 20 組</div>
+                            <div style="display: flex;align-items: center;">
+                                <span class="twd">TWD</span>
+                                <p class="ticket-price">$1,765</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="./index.js"></script>
+</body>
+</html>
